@@ -43,6 +43,10 @@
 		747F007F15951A58000F601E /* SignUpFieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 747F007315951A58000F601E /* SignUpFieldBG.png */; };
 		747F008015951A58000F601E /* Twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 747F007415951A58000F601E /* Twitter.png */; };
 		747F008115951A58000F601E /* TwitterDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 747F007515951A58000F601E /* TwitterDown.png */; };
+		ADA31FF91A13C6110051C93F /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA31FF51A13C6110051C93F /* TwitterKit.framework */; };
+		ADA31FFA1A13C6110051C93F /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ADA31FF61A13C6110051C93F /* TwitterKitResources.bundle */; };
+		ADA31FFB1A13C6110051C93F /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA31FF71A13C6110051C93F /* Fabric.framework */; };
+		ADA31FFC1A13C6110051C93F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA31FF81A13C6110051C93F /* CoreText.framework */; };
 		C4BBB7B516FD2ABC003CA3F7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BBB7B316FD2ABC003CA3F7 /* CoreLocation.framework */; };
 		C4BBB7B616FD2ABC003CA3F7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BBB7B416FD2ABC003CA3F7 /* StoreKit.framework */; };
 		C4BBB7BA16FD2B0F003CA3F7 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BBB7B716FD2B0F003CA3F7 /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -103,6 +107,10 @@
 		747F007315951A58000F601E /* SignUpFieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SignUpFieldBG.png; sourceTree = "<group>"; };
 		747F007415951A58000F601E /* Twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Twitter.png; sourceTree = "<group>"; };
 		747F007515951A58000F601E /* TwitterDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwitterDown.png; sourceTree = "<group>"; };
+		ADA31FF51A13C6110051C93F /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		ADA31FF61A13C6110051C93F /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		ADA31FF71A13C6110051C93F /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		ADA31FF81A13C6110051C93F /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		C4BBB7B316FD2ABC003CA3F7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		C4BBB7B416FD2ABC003CA3F7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		C4BBB7B716FD2B0F003CA3F7 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -126,11 +134,14 @@
 				C4BBB7BB16FD2B0F003CA3F7 /* AdSupport.framework in Frameworks */,
 				C4BBB7BC16FD2B0F003CA3F7 /* Social.framework in Frameworks */,
 				C4BBB7B516FD2ABC003CA3F7 /* CoreLocation.framework in Frameworks */,
+				ADA31FF91A13C6110051C93F /* TwitterKit.framework in Frameworks */,
 				143C2CDF182058B900DFCD05 /* FacebookSDK.framework in Frameworks */,
 				C4BBB7B616FD2ABC003CA3F7 /* StoreKit.framework in Frameworks */,
 				74366ECA158AB00E00A17D8A /* QuartzCore.framework in Frameworks */,
 				74366EC3158AAF7E00A17D8A /* AudioToolbox.framework in Frameworks */,
 				74366EC4158AAF7E00A17D8A /* CFNetwork.framework in Frameworks */,
+				ADA31FFC1A13C6110051C93F /* CoreText.framework in Frameworks */,
+				ADA31FFB1A13C6110051C93F /* Fabric.framework in Frameworks */,
 				74366EC5158AAF7E00A17D8A /* libz.1.1.3.dylib in Frameworks */,
 				143C2CDD18203DBB00DFCD05 /* Parse.framework in Frameworks */,
 				74366EC6158AAF7E00A17D8A /* MobileCoreServices.framework in Frameworks */,
@@ -178,6 +189,10 @@
 				74366EAD158AAE1000A17D8A /* Supporting Files */,
 				74366EA5158AAE0F00A17D8A /* Frameworks */,
 				74366EA3158AAE0F00A17D8A /* Products */,
+				ADA31FF51A13C6110051C93F /* TwitterKit.framework */,
+				ADA31FF61A13C6110051C93F /* TwitterKitResources.bundle */,
+				ADA31FF71A13C6110051C93F /* Fabric.framework */,
+				ADA31FF81A13C6110051C93F /* CoreText.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -284,6 +299,7 @@
 				74366E9E158AAE0F00A17D8A /* Sources */,
 				74366E9F158AAE0F00A17D8A /* Frameworks */,
 				74366EA0158AAE0F00A17D8A /* Resources */,
+				ADA31FF41A13C5DC0051C93F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -332,6 +348,7 @@
 				747F007715951A58000F601E /* ExitDown.png in Resources */,
 				747F007815951A58000F601E /* Facebook.png in Resources */,
 				747F007915951A58000F601E /* FacebookDown.png in Resources */,
+				ADA31FFA1A13C6110051C93F /* TwitterKitResources.bundle in Resources */,
 				747F007A15951A58000F601E /* LoginFieldBG.png in Resources */,
 				747F007B15951A58000F601E /* Logo.png in Resources */,
 				747F007C15951A58000F601E /* MainBG.png in Resources */,
@@ -349,6 +366,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ADA31FF41A13C5DC0051C93F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 3baf12b5417aa125093265f6ee70012f40343e2b 60daea4b376fe8118c2b2564d89497dd6a1aaae2c178fb242f2351fb74b9326b";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		74366E9E158AAE0F00A17D8A /* Sources */ = {
@@ -432,6 +465,7 @@
 					"$(inherited)",
 					"$(SRCROOT)",
 					/Users/fjm/git/SampleAppsPrivate/LoginAndSignUpTutorial,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LogInAndSignUpDemo/LogInAndSignUpDemo-Prefix.pch";
@@ -453,6 +487,7 @@
 					"$(inherited)",
 					"$(SRCROOT)",
 					/Users/fjm/git/SampleAppsPrivate/LoginAndSignUpTutorial,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LogInAndSignUpDemo/LogInAndSignUpDemo-Prefix.pch";

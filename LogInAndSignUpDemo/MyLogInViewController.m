@@ -7,6 +7,8 @@
 //
 
 #import "MyLogInViewController.h"
+#import <TwitterKit/TwitterKit.h>
+
 #import <QuartzCore/QuartzCore.h>
 
 @interface MyLogInViewController ()
@@ -19,6 +21,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //Add Fabric Code
+    TWTRLogInButton *logInButton = [TWTRLogInButton buttonWithLogInCompletion:^(TWTRSession *session, NSError *error) {
+        // play with Twitter session
+    }];
+    logInButton.center = self.view.center;
+    [self.view addSubview:logInButton];
     
     [self.logInView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"MainBG.png"]]];
     [self.logInView setLogo:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Logo.png"]]];

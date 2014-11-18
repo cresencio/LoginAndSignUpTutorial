@@ -7,6 +7,7 @@
 //
 
 #import "MySignUpViewController.h"
+#import <TwitterKit/TwitterKit.h>
 #import <QuartzCore/QuartzCore.h>
 
 @interface MySignUpViewController ()
@@ -22,6 +23,7 @@
     
     [self.signUpView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"MainBG.png"]]];
     [self.signUpView setLogo:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo.png"]]];
+
     
     // Change button apperance
     [self.signUpView.dismissButton setImage:[UIImage imageNamed:@"Exit.png"] forState:UIControlStateNormal];

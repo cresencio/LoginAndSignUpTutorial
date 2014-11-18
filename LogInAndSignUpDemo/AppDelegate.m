@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "DemoTableViewController.h"
+#import <Fabric/Fabric.h>
+#import <TwitterKit/TwitterKit.h>
+
 
 @implementation AppDelegate
 
@@ -21,9 +24,10 @@
     // Fill in with your Parse and Twitter credentials. Don't forget to add your
     // Facebook id in Info.plist:
     // ****************************************************************************
-    [Parse setApplicationId:@"your_application_id" clientKey:@"your_client_key"];
+    [Parse setApplicationId:@"JX5npAB9XFEPkw363CSd7G9YF5yK2QplRhFSRQ08" clientKey:@"7YQHqg2cU1hoj8o41q7ltLAd7R43zqmzeWO56pNm"];
     [PFFacebookUtils initializeFacebook];
-    [PFTwitterUtils initializeWithConsumerKey:@"your_twitter_consumer_key" consumerSecret:@"your_twitter_consumer_secret"];
+    [Fabric with:@[TwitterKit]];
+    //[PFTwitterUtils initializeWithConsumerKey:@"your_twitter_consumer_key" consumerSecret:@"your_twitter_consumer_secret"];
     
     // Set default ACLs
     PFACL *defaultACL = [PFACL ACL];
